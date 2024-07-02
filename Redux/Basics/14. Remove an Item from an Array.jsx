@@ -1,0 +1,28 @@
+/**
+ * 
+ *  Finish writing the reducer so a new state array is returned with the item at the specific index removed.
+ * 
+ * 
+ */
+
+const immutableReducer = (state = [0,1,2,3,4,5], action) => {
+    switch(action.type) {
+      case 'REMOVE_ITEM':
+        // Don't mutate state here or the tests will fail
+        return [
+            ...state.slice(0, action.index),  // items before the index
+            ...state.slice(action.index + 1)  // items after the index
+          ];
+      default:
+        return state;
+    }
+  };
+  
+  const removeItem = (index) => {
+    return {
+      type: 'REMOVE_ITEM',
+      index
+    }
+  }
+  
+  const store = Redux.createStore(immutableReducer);
