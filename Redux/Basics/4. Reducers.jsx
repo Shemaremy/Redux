@@ -1,5 +1,14 @@
 /**
  * 
+ * 
+ * Reducer:
+ * 
+ * - A function with 2 arguments always (state and action)
+ * - It only updates the state based on action done
+ * 
+ * 
+ * 
+ * 
  * After an action is created and dispatched, the Redux store needs to know how to respond to that action. 
  * This is the job of a reducer function. Reducers in Redux are responsible for the state modifications 
  * that take place in response to actions. A reducer takes state and action as arguments, 

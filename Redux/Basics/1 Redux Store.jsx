@@ -1,5 +1,10 @@
 /**
- * Redux store is a place where your application's entire state is kept in one centralized location.
+ * Store:
+ * 
+ * - Variable
+ * - Contains current app state  
+ * - kept in one separate component
+ *
 */
 
 

@@ -1,6 +1,9 @@
 /*
 *
-Dispatch: A function used to send actions to the Redux store to update the state.
+Dispatch: 
+ - A function 
+ - Sends actions to the store
+ - It only sends, it doesnt update
 *
 */
 
